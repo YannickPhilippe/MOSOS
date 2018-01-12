@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1297333787998" org.eventb.texttools.text_representation="machine control2 refines control1  sees control0&#13;&#13;variables c&#13;&#13;events&#13;  event INITIALISATION extends INITIALISATION&#13;  end&#13;&#13;  event observation2 refines observation&#13;    any p b&#13;    where&#13;      @grd1 p ∈ P&#13;      @grd2 b ∈ B&#13;      @grd4 p↦b∈A&#13;      @grd5c(p) ↦b ∈ structure&#13;    then&#13;      @act1 c(p)≔b&#13;  end&#13;end&#13;" version="5">
+<org.eventb.core.refinesMachine name="_r3cskTUAEeCPKMAxQcxjrQ" org.eventb.core.target="control1"/>
+<org.eventb.core.seesContext name="_r3dToDUAEeCPKMAxQcxjrQ" org.eventb.core.target="control0"/>
+<org.eventb.core.variable name="(" org.eventb.core.identifier="c"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="c ≔ c0" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="observation2">
+<org.eventb.core.refinesEvent name="_r3dToTUAEeCPKMAxQcxjrQ" org.eventb.core.target="observation1"/>
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ P"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∈ B"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="p↦b∈A"/>
+<org.eventb.core.guard name="_r3d6sDUAEeCPKMAxQcxjrQ" org.eventb.core.label="grd5" org.eventb.core.predicate="c(p)↦b ∈ structure"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="c(p)≔b" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

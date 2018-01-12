@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="control0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="D"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="org"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="axm1" org.eventb.core.predicate="org ∈ D → B"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="dst"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm2" org.eventb.core.predicate="dst ∈ D→ B"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm3" org.eventb.core.predicate="structure= org∼;dst"/>
+</org.eventb.core.contextFile>

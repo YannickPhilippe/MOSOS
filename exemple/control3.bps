@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="accept3/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="accept3/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="accept3/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="accept3/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="accept3/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="accept3/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="observation3/p/WWD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/b/WWD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="observation3/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/grd4/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="observation3/grd5/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="observation3/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="observation3/act1/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="off_green3/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="off_green3/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="off_green3/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="off_green3/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="refuse3/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="refuse3/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="off_red3/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

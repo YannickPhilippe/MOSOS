@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;org.eventb.codegen.ui.cgConfig;org.animb.valuation.valBase" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.comment="set of persons" org.eventb.core.identifier="P"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.comment="set of buildings" org.eventb.core.identifier="B"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="dehors"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="A"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm1" org.eventb.core.predicate="dehors ∈ B"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="A ⊆ P×B"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="c0"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm3" org.eventb.core.predicate="c0 ∈ P →B"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm4" org.eventb.core.predicate="∀x· x∈P ⇒ c0(x)=dehors"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm5" org.eventb.core.predicate="c0 ⊆ A"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="structure"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm6" org.eventb.core.predicate="structure ⊆ B×B"/>
+<org.eventb.core.axiom name="3" org.eventb.core.label="axm7" org.eventb.core.predicate="∀b· b ∈ B ⇒ b↦b ∉ structure"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm8" org.eventb.core.predicate="A ⊆ A;structure∼"/>
+<org.eventb.core.constant name="5" org.eventb.core.identifier="bob"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm9" org.eventb.core.predicate="bob ∈ P"/>
+<org.eventb.core.constant name="7" org.eventb.core.identifier="alice"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm10" org.eventb.core.predicate="alice ∈ P"/>
+<org.eventb.core.constant name="9" org.eventb.core.identifier="jimmy"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="axm11" org.eventb.core.predicate="jimmy ∈ P"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm12" org.eventb.core.predicate="bob ≠ alice"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm13" org.eventb.core.predicate="bob ≠ jimmy"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="axm14" org.eventb.core.predicate="jimmy ≠ alice"/>
+<org.eventb.core.carrierSet name="?" org.eventb.core.identifier="j"/>
+<org.eventb.core.constant name="@" org.eventb.core.identifier="cv"/>
+<org.eventb.core.constant name="A" org.eventb.core.identifier="v"/>
+<org.eventb.core.axiom name="B" org.eventb.codegen.ui.typingAttribute="--unset--" org.eventb.core.label="axm15" org.eventb.core.predicate="partition(j, {cv}, {v})"/>
+</org.eventb.core.contextFile>

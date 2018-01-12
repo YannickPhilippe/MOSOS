@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/pro/control0.bcc|org.eventb.core.scContextFile#control0" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scInternalContext name="control0">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="dehors∈B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="A⊆P × B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="c0∈P → B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="∀x⦂P·x∈P⇒c0(x)=dehors" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="c0⊆A" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#0" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="structure⊆B × B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="-" org.eventb.core.label="axm7" org.eventb.core.predicate="∀b⦂B·b∈B⇒b ↦ b∉structure" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#3" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="." org.eventb.core.label="axm8" org.eventb.core.predicate="A⊆A;structure∼" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="/" org.eventb.core.label="axm9" org.eventb.core.predicate="bob∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#6" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="0" org.eventb.core.label="axm10" org.eventb.core.predicate="alice∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#8" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="1" org.eventb.core.label="axm11" org.eventb.core.predicate="jimmy∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#:" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="2" org.eventb.core.label="axm12" org.eventb.core.predicate="bob≠alice" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#;" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="3" org.eventb.core.label="axm13" org.eventb.core.predicate="bob≠jimmy" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#=" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="4" org.eventb.core.label="axm14" org.eventb.core.predicate="jimmy≠alice" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#&gt;" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="5" org.eventb.core.label="axm15" org.eventb.core.predicate="partition(j,{cv},{v})" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#B" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="A" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#)" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.scCarrierSet name="B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.scCarrierSet name="P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scConstant name="alice" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#7" org.eventb.core.type="P"/>
+<org.eventb.core.scConstant name="bob" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#5" org.eventb.core.type="P"/>
+<org.eventb.core.scConstant name="c0" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#+" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.scConstant name="cv" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#@" org.eventb.core.type="j"/>
+<org.eventb.core.scConstant name="dehors" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#." org.eventb.core.type="B"/>
+<org.eventb.core.scCarrierSet name="j" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.carrierSet#?" org.eventb.core.type="ℙ(j)"/>
+<org.eventb.core.scConstant name="jimmy" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#9" org.eventb.core.type="P"/>
+<org.eventb.core.scConstant name="structure" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#1" org.eventb.core.type="ℙ(B×B)"/>
+<org.eventb.core.scConstant name="v" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.constant#A" org.eventb.core.type="j"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scAxiom name="control1" org.eventb.core.label="axm1" org.eventb.core.predicate="org∈D → B" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="control2" org.eventb.core.label="axm2" org.eventb.core.predicate="dst∈D → B" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="control3" org.eventb.core.label="axm3" org.eventb.core.predicate="structure=org∼;dst" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="D" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(D)"/>
+<org.eventb.core.scConstant name="dst" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.constant#+" org.eventb.core.type="ℙ(D×B)"/>
+<org.eventb.core.scConstant name="org" org.eventb.core.source="/pro/doors.buc|org.eventb.core.contextFile#doors|org.eventb.core.constant#)" org.eventb.core.type="ℙ(D×B)"/>
+</org.eventb.core.scContextFile>

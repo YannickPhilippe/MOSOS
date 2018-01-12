@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p0" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="FORWARD_INF5" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀b⦂B·b∈B⇒b ↦ b∉structure">
+<org.eventb.core.prIdent name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.prIdent name="structure" org.eventb.core.type="ℙ(B×B)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="structure⊆B × B">
+<org.eventb.core.prIdent name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.prIdent name="structure" org.eventb.core.type="ℙ(B×B)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="A⊆P × B">
+<org.eventb.core.prIdent name="A" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.prIdent name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.prIdent name="P" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂P·x∈P⇒c0(x)=dehors">
+<org.eventb.core.prIdent name="P" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.prIdent name="dehors" org.eventb.core.type="B"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀b⦂B·¬b ↦ b∈structure">
+<org.eventb.core.prIdent name="structure" org.eventb.core.type="ℙ(B×B)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀b⦂B·⊤⇒¬b ↦ b∈structure">
+<org.eventb.core.prIdent name="structure" org.eventb.core.type="ℙ(B×B)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀b⦂B·b∈B⇒¬b ↦ b∈structure">
+<org.eventb.core.prIdent name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.prIdent name="structure" org.eventb.core.type="ℙ(B×B)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂P·c0(x)=dehors">
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.prIdent name="dehors" org.eventb.core.type="B"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="dehors∈B">
+<org.eventb.core.prIdent name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.prIdent name="dehors" org.eventb.core.type="B"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀x⦂P·⊤⇒c0(x)=dehors">
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.prIdent name="dehors" org.eventb.core.type="B"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:0"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

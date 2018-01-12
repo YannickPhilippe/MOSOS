@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B" org.eventb.core.type="ℙ(B)"/>
+<org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="j" org.eventb.core.type="ℙ(j)"/>
+<org.eventb.core.poIdentifier name="A" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.poIdentifier name="alice" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="bob" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="c0" org.eventb.core.type="ℙ(P×B)"/>
+<org.eventb.core.poIdentifier name="cv" org.eventb.core.type="j"/>
+<org.eventb.core.poIdentifier name="dehors" org.eventb.core.type="B"/>
+<org.eventb.core.poIdentifier name="jimmy" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="structure" org.eventb.core.type="ℙ(B×B)"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="j"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/pro/control0.bpo|org.eventb.core.poFile#control0|org.eventb.core.poPredicateSet#HYP)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂P·x∈P⇒x∈dom(c0)∧c0∈P ⇸ B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/pro/control0.bpo|org.eventb.core.poFile#control0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/pro/control0.bpo|org.eventb.core.poFile#control0|org.eventb.core.poPredicateSet#HYP)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYP)" org.eventb.core.parentSet="/pro/control0.bpo|org.eventb.core.poFile#control0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="dehors∈B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="A⊆P × B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="c0∈P → B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/pro/control0.bpo|org.eventb.core.poFile#control0|org.eventb.core.poPredicateSet#HYP)" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀x⦂P·x∈P⇒c0(x)=dehors" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="c0⊆A" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="structure⊆B × B" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="∀b⦂B·b∈B⇒b ↦ b∉structure" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="A⊆A;structure∼" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="bob∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="alice∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="jimmy∈P" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#:"/>
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="bob≠alice" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="bob≠jimmy" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="jimmy≠alice" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="partition(j,{cv},{v})" org.eventb.core.source="/pro/control0.buc|org.eventb.core.contextFile#control0|org.eventb.core.axiom#B"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
