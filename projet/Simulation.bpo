@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/projet/Simulation.bpo|org.eventb.core.poFile#Simulation|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="8">
+<org.eventb.core.poIdentifier name="PAut" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="PNAut" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pin" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Plab" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pout" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/projet/Simulation.bpo|org.eventb.core.poFile#Simulation|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="8">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Pin⊆P" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Pout⊆P" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="P=Pin∪Pout" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#1"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Pin∩Pout=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Pext⊆P" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#5"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="Plab⊆P" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#6"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="P=Pext∪Plab" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#7"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="Pext∩Plab=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="PNAut⊆Pext" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="PAut⊆Pext" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#="/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="Pext=PAut∪PNAut" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="PAut∩PNAut=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Simulation.bum|org.eventb.core.machineFile#Simulation|org.eventb.core.invariant#?"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

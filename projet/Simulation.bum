@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.variable name="(" org.eventb.core.comment="Ensemble des personnes dans le GLORIA" org.eventb.core.identifier="Pin"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Ensemble des personnes à l'extérieur du gloria" org.eventb.core.identifier="Pout"/>
+<org.eventb.core.seesContext name="-" org.eventb.core.target="contexte"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="inv1" org.eventb.core.predicate="Pin ⊆ P"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv2" org.eventb.core.predicate="Pout ⊆ P"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="P = Pin ∪ Pout"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv4" org.eventb.core.predicate="Pin ∩ Pout = ∅"/>
+<org.eventb.core.variable name="3" org.eventb.core.comment="Ensemble des personnes ne travaillant pas au gloria" org.eventb.core.identifier="Pext"/>
+<org.eventb.core.variable name="4" org.eventb.core.comment="Ensemble des personnes ne travaillant au gloria" org.eventb.core.identifier="Plab"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="Pext ⊆ P"/>
+<org.eventb.core.invariant name="6" org.eventb.core.label="inv6" org.eventb.core.predicate="Plab ⊆ P"/>
+<org.eventb.core.invariant name="7" org.eventb.core.label="inv7" org.eventb.core.predicate="P = Pext ∪ Plab"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv8" org.eventb.core.predicate="Pext ∩ Plab = ∅"/>
+<org.eventb.core.variable name="9" org.eventb.core.comment="Ensemble des personnes extérieur autoriser à rentré" org.eventb.core.identifier="PAut"/>
+<org.eventb.core.variable name=":" org.eventb.core.comment="Ensemble des personnes extérieur non autoriser à rentré" org.eventb.core.identifier="PNAut"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv9" org.eventb.core.predicate="PNAut ⊆ Pext "/>
+<org.eventb.core.invariant name="=" org.eventb.core.label="inv10" org.eventb.core.predicate="PAut ⊆ Pext"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv11" org.eventb.core.predicate="Pext = PAut ∪ PNAut"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv12" org.eventb.core.predicate="PAut ∩ PNAut = ∅"/>
+</org.eventb.core.machineFile>
