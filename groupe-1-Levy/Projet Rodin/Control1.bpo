@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="AUnCode" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="AUneCarte" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poPredicate name="Visiteurt" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="Visiteuru" org.eventb.core.predicate="Hotesses⊆Employes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="Visiteurv" org.eventb.core.predicate="AUneCarte⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="Visiteurw" org.eventb.core.predicate="Employes⊆AUneCarte" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="Visiteurx" org.eventb.core.predicate="AUnCode⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poIdentifier name="Situations" org.eventb.core.type="ℙ(Situations)"/>
+<org.eventb.core.poIdentifier name="Maintenance" org.eventb.core.type="Situations"/>
+<org.eventb.core.poIdentifier name="Normal" org.eventb.core.type="Situations"/>
+<org.eventb.core.poIdentifier name="Urgence" org.eventb.core.type="Situations"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TEST/Control1.bpo|org.eventb.core.poFile#Control1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Situations,{Urgence},{Maintenance},{Normal})" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

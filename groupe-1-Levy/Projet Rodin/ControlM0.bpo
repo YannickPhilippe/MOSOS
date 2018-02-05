@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="68">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="50">
+<org.eventb.core.poIdentifier name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="AUnCode" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="AUneCarte" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poPredicate name="Visiteurt" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="Visiteuru" org.eventb.core.predicate="Hotesses⊆Employes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="Visiteurv" org.eventb.core.predicate="AUneCarte⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="Visiteurw" org.eventb.core.predicate="Employes⊆AUneCarte" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="Visiteurx" org.eventb.core.predicate="AUnCode⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="ExterieurGloria" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="InterieurGloria" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="PersonneA" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="PersonneB" org.eventb.core.type="Personnes"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="68">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorib"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(Personnes))∩Personnes=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act3/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="68">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorib"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Personnes≠(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#'|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#'|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorib"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="68">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorib"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Personnes≠(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorib"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGlorib" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="68">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="PersonneB'" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="PersonneA'" org.eventb.core.type="Personnes"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGlorib" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGlorib" org.eventb.core.poStamp="68"/>
+<org.eventb.core.poSequent name="Observation1/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGloric"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(InterieurGloria∪{PersonneA})∩(ExterieurGloria ∖ {PersonneA})=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#\/"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#Observation1\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGloric" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGloric" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGloric" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈ExterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#\/|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneB∈InterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Hotesses∩InterieurGloria≠(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#\/|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Observation2/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorid"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(InterieurGloria ∖ {PersonneA})∩(ExterieurGloria∪{PersonneA})=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#Observation2\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGlorid" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGlorid" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGlorid" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈ExterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#2|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneA∈AUneCarte" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#2|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Observation3/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorie"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(InterieurGloria ∖ {PersonneA})∩(ExterieurGloria∪{PersonneA})=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#Observation3\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGlorie" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGlorie" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGlorie" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈InterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#8|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Hotesses∩InterieurGloria≠(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#8|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Observation4/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorif"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(InterieurGloria ∖ {PersonneA})∩(ExterieurGloria∪{PersonneA})=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#Observation4\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGlorif" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGlorif" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGlorif" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈InterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#9|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneA∈AUnCode" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#9|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Hotesses∩InterieurGloria=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#9|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Observation5/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTALLHYPInterieurGlorig"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(InterieurGloria ∖ {PersonneA})∩(ExterieurGloria∪{PersonneA})=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poSequent#Observation5\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTInterieurGlorig" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poIdentifier name="InterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="ExterieurGloria'" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPInterieurGlorig" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#EVTIDENTInterieurGlorig" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈InterieurGloria" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneA∈AUneCarte" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.event#:|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TEST/ControlM0.bpo|org.eventb.core.poFile#ControlM0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="66">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="InterieurGloria⊆Personnes" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="ExterieurGloria⊆Personnes" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="InterieurGloria∩ExterieurGloria=(∅ ⦂ ℙ(Personnes))" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="PersonneA∈Personnes" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#4"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="PersonneB∈Personnes" org.eventb.core.source="/TEST/ControlM0.bum|org.eventb.core.machineFile#ControlM0|org.eventb.core.invariant#5"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

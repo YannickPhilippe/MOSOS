@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/TEST/Control1.bcc|org.eventb.core.scContextFile#Control1" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scInternalContext name="Control0">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="Hotesses⊆Employes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="AUneCarte⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="Employes⊆AUneCarte" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="AUnCode⊆Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.axiom#1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="AUnCode" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.constant#0" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.scConstant name="AUneCarte" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.constant#-" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.scConstant name="Employes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.constant#*" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.scConstant name="Hotesses" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.constant#+" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.scCarrierSet name="Personnes" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.scConstant name="Visiteurs" org.eventb.core.source="/TEST/Control0.buc|org.eventb.core.contextFile#Control0|org.eventb.core.constant#)" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInternalContext name="Control1">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/TEST/Control0.bcc|org.eventb.core.scContextFile#Control0" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scAxiom name="Control1" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Situations,{Urgence},{Maintenance},{Normal})" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="Maintenance" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.constant#*" org.eventb.core.type="Situations"/>
+<org.eventb.core.scConstant name="Normal" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.constant#+" org.eventb.core.type="Situations"/>
+<org.eventb.core.scCarrierSet name="Situations" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(Situations)"/>
+<org.eventb.core.scConstant name="Urgence" org.eventb.core.source="/TEST/Control1.buc|org.eventb.core.contextFile#Control1|org.eventb.core.constant#)" org.eventb.core.type="Situations"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scAxiom name="Control2" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Horaires,{SeptHeureVingtDeuxHeure},{SeptHeureHuitHeure},{DixHuitHeureVingtDeuxHeure})" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="DixHuitHeureVingtDeuxHeure" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.constant#," org.eventb.core.type="Horaires"/>
+<org.eventb.core.scCarrierSet name="Horaires" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(Horaires)"/>
+<org.eventb.core.scConstant name="SeptHeureHuitHeure" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.constant#+" org.eventb.core.type="Horaires"/>
+<org.eventb.core.scConstant name="SeptHeureVingtDeuxHeure" org.eventb.core.source="/TEST/Control2.buc|org.eventb.core.contextFile#Control2|org.eventb.core.constant#*" org.eventb.core.type="Horaires"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;ch.ethz.eventb.qualprob.qpConfig" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="ExterieurGloria ≔ Personnes" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="InterieurGloria ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="PersonneA :∈ Personnes" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="PersonneB :∈ Personnes" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Control0"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="InterieurGloria"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="ExterieurGloria"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="InterieurGloria ⊆ Personnes"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="ExterieurGloria ⊆ Personnes"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="InterieurGloria ∩ ExterieurGloria = ∅"/>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Observation1">
+<org.eventb.core.action name="'" org.eventb.core.assignment="ExterieurGloria ≔ ExterieurGloria ∖{PersonneA}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ ExterieurGloria"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="InterieurGloria ≔ InterieurGloria ∪ {PersonneA}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="PersonneB ∈ InterieurGloria"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="Hotesses ∩ InterieurGloria ≠ ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="PersonneA"/>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Observation2">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ ExterieurGloria"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="InterieurGloria ≔ InterieurGloria ∖{PersonneA} " org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ExterieurGloria ≔ ExterieurGloria ∪ {PersonneA}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="PersonneA ∈ AUneCarte"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="PersonneB"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv5" org.eventb.core.predicate="PersonneA ∈ Personnes"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv6" org.eventb.core.predicate="PersonneB ∈ Personnes"/>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Observation3">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ InterieurGloria"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Hotesses ∩ InterieurGloria ≠ ∅"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="InterieurGloria ≔ InterieurGloria ∖{PersonneA}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="ExterieurGloria ≔ ExterieurGloria ∪ {PersonneA}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="9" org.eventb.core.comment="— Une personne A veut sortir du bâtiment et l’hôtesse n’est plus présente ; A doit indiquer&#10;un code sur un dispositif contrôlant la sortie." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Observation4">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ InterieurGloria"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PersonneA ∈ AUnCode"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="InterieurGloria ≔ InterieurGloria ∖{PersonneA}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="ExterieurGloria ≔ ExterieurGloria ∪ {PersonneA}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="Hotesses ∩ InterieurGloria = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Observation5">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ InterieurGloria"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PersonneA ∈ AUneCarte"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="InterieurGloria ≔ InterieurGloria ∖{PersonneA}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="ExterieurGloria ≔ ExterieurGloria ∪ {PersonneA}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

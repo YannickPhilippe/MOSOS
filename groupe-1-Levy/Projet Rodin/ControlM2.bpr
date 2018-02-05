@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="Entrer/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Entrer/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Sortir/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Sortir/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(Personnes))⊆Hotesses"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Entrer/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="hotesses⊆Hotesses∧personne∈Hotesses"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="hotesses⊆Hotesses"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="personne∈Hotesses"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="hotesses∪{personne}⊆Hotesses"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Sortir/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Personnes" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="NewPP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R0"/>
+<org.eventb.core.prString name=".maxSteps" org.eventb.core.prSValue="-1"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="hotesses ∖ {personne}⊆Hotesses"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="hotesses⊆Hotesses"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="personne∈Personnes"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.pp.pp:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Entrer/personne/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Entrer/act2/FIS" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="hotesses≠(∅ ⦂ ℙ(Personnes))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬hotesses=(∅ ⦂ ℙ(Personnes))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(Personnes))⊆Employes"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Entrer/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="hotesses" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="hotesses∪{personne}⊆Employes"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="personne∈Personnes"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="hotesses⊆Employes"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="hotesses⊆Employes∧personne∈Employes"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="personne∈Employes"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧personne∈Employes"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Sortir/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="position∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="personne∈Personnes">
+<org.eventb.core.prIdent name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prIdent name="personne" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act1/FIS" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Personnes">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Positions,{Interieur},{Exterieur}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Personnes,Visiteurs,Employes))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Employes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Visiteurs∩Employes=(∅ ⦂ ℙ(Personnes))">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="position'∈Positions">
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+<org.eventb.core.prIdent name="position'" org.eventb.core.type="Positions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Positions,{Interieur},{Exterieur})">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Positions={Interieur,Exterieur}">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Employes=(∅ ⦂ ℙ(Personnes))"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Personnes=Visiteurs∪Employes">
+<org.eventb.core.prIdent name="Visiteurs" org.eventb.core.type="ℙ(Personnes)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Interieur=Exterieur">
+<org.eventb.core.prIdent name="Exterieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Interieur" org.eventb.core.type="Positions"/>
+<org.eventb.core.prIdent name="Positions" org.eventb.core.type="ℙ(Positions)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="personne'∈Personnes">
+<org.eventb.core.prIdent name="personne'" org.eventb.core.type="Personnes"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Employes≠(∅ ⦂ ℙ(Personnes))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

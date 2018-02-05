@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="Control0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Situations"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="Urgence"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="Maintenance"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="Normal"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Situations,{Urgence},{Maintenance},{Normal})"/>
+</org.eventb.core.contextFile>

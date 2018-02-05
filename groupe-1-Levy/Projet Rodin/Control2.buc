@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="Control1"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Horaires"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Horaires,{SeptHeureVingtDeuxHeure},{SeptHeureHuitHeure},{DixHuitHeureVingtDeuxHeure})"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="SeptHeureVingtDeuxHeure"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="SeptHeureHuitHeure"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="DixHuitHeureVingtDeuxHeure"/>
+</org.eventb.core.contextFile>
