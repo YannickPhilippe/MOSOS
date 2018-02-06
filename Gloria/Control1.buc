@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1517935787431" org.eventb.texttools.text_representation="context Control1 extends Control0&#10;&#10;sets Cas&#10;&#10;constants Normal Urgence&#10;&#10;axioms&#10;&#9;@axm0 partition(Cas, {Normal}, {Urgence})&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_SClAwAtcEeiwZL2kbEDizw" org.eventb.core.target="Control0"/>
+<org.eventb.core.carrierSet name="_SClAwQtcEeiwZL2kbEDizw" org.eventb.core.identifier="Cas"/>
+<org.eventb.core.constant name="_SClAwgtcEeiwZL2kbEDizw" org.eventb.core.identifier="Normal"/>
+<org.eventb.core.constant name="_SClAwwtcEeiwZL2kbEDizw" org.eventb.core.identifier="Urgence"/>
+<org.eventb.core.axiom name="_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas, {Normal}, {Urgence})"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1517932198679" org.eventb.texttools.text_representation="context Control0&#10;&#10;sets Personnes&#10;&#10;constants Visiteurs Employes Hotesses aCarte aCode&#10;&#10;axioms&#10;&#9;@axm1 partition(Personnes,Visiteurs,Employes)&#10;&#9;@axm2 Hotesses ⊆ Employes&#10;&#9;@axm3 aCode ⊆ Personnes&#10;&#9;@axm4 aCarte ⊆ Personnes&#10;&#9;@axm5 Employes ⊆ aCarte&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_YnaD4AtVEeiwZL2kbEDizw" org.eventb.core.identifier="Personnes"/>
+<org.eventb.core.constant name="_YnaD4QtVEeiwZL2kbEDizw" org.eventb.core.identifier="Visiteurs"/>
+<org.eventb.core.constant name="_YnaD4gtVEeiwZL2kbEDizw" org.eventb.core.identifier="Employes"/>
+<org.eventb.core.constant name="_YnaD4wtVEeiwZL2kbEDizw" org.eventb.core.identifier="Hotesses"/>
+<org.eventb.core.constant name="_YnaD5AtVEeiwZL2kbEDizw" org.eventb.core.identifier="aCarte"/>
+<org.eventb.core.constant name="_YnaD5QtVEeiwZL2kbEDizw" org.eventb.core.identifier="aCode"/>
+<org.eventb.core.axiom name="_YnaD5gtVEeiwZL2kbEDizw" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Personnes,Visiteurs,Employes)"/>
+<org.eventb.core.axiom name="_YnaD5wtVEeiwZL2kbEDizw" org.eventb.core.label="axm2" org.eventb.core.predicate="Hotesses ⊆ Employes"/>
+<org.eventb.core.axiom name="_YnaD6AtVEeiwZL2kbEDizw" org.eventb.core.label="axm3" org.eventb.core.predicate="aCode ⊆ Personnes"/>
+<org.eventb.core.axiom name="_YnaD6QtVEeiwZL2kbEDizw" org.eventb.core.label="axm4" org.eventb.core.predicate="aCarte ⊆ Personnes"/>
+<org.eventb.core.axiom name="_YnaD6gtVEeiwZL2kbEDizw" org.eventb.core.label="axm5" org.eventb.core.predicate="Employes ⊆ aCarte"/>
+</org.eventb.core.contextFile>

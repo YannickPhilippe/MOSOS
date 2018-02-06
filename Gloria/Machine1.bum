@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1517935214663" org.eventb.texttools.text_representation="machine Machine1 refines Machine0 sees Control1&#10;&#10;events&#10;  event INITIALISATION&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_Y93X4AtcEeiwZL2kbEDizw" org.eventb.core.target="Machine0"/>
+<org.eventb.core.seesContext name="_aCDYwAtcEeiwZL2kbEDizw" org.eventb.core.target="Control1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="CasActuel :∈ Cas" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="PersonneA :∈ Personnes" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="PersonneB :∈ Personnes" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="PersonnesInterieur ≔ ∅" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="PersonnesExterieur ≔ Personnes" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_aCDYwAtcEeiwZL2kbEDizx" org.eventb.core.identifier="CasActuel"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_aCDYwAtcEeiwZL2kbEDizy" org.eventb.core.identifier="PersonneA"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_aCDYwAtcEeiwZL2kbEDizz" org.eventb.core.identifier="PersonneB"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_aCDYwAtcEeiwZL2kbEDiz{" org.eventb.core.identifier="PersonnesExterieur"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_aCDYwAtcEeiwZL2kbEDiz|" org.eventb.core.identifier="PersonnesInterieur"/>
+<org.eventb.core.invariant name="_aCDYwAtcEeiwZL2kbEDiz}" org.eventb.core.label="inv1" org.eventb.core.predicate="CasActuel ∈ Cas"/>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDiz~" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Situation1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="CasActuel = Normal"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation2">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd4" org.eventb.core.predicate="CasActuel = Normal"/>
+<org.eventb.core.refinesEvent name="(" org.eventb.core.target="Situation2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation3">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Situation3"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="CasActuel ∈ Cas"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{)" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation4">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Situation4"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="CasActuel ∈ Cas"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation5">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd4" org.eventb.core.predicate="CasActuel = Normal"/>
+<org.eventb.core.refinesEvent name="(" org.eventb.core.target="Situation5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{+" org.eventb.core.comment="Cas d'urgence, une personne présente dans le Gloria peut sortir" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Situation6">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ PersonnesInterieur"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="CasActuel = Urgence"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="PersonnesInterieur ≔ PersonnesInterieur ∖ {PersonneA}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="PersonnesExterieur ≔ PersonnesExterieur ∪ {PersonneA}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
