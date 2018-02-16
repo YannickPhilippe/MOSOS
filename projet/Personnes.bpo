@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Alpha" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="Bravo" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="Pin" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pout" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P=(∅ ⦂ ℙ(P))∪P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(P))∩P=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="Alpha'∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#)"/>
+<org.eventb.core.poPredicate name="(" org.eventb.core.predicate="Bravo'∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Alpha'≠Bravo'" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act3/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P≠(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P≠(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextm"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcontextm" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Bravo'" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="Alpha'" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="Pout'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pin'" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcontextm" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTIDENTcontextm" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="Rentrer/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextn"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P=(Pin∪{Alpha})∪(Pout ∖ {Alpha})" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#Rentrer\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Rentrer/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontextn"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(Pin∪{Alpha})∩(Pout ∖ {Alpha})=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#Rentrer\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcontextn" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+<org.eventb.core.poIdentifier name="Pout'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pin'" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcontextn" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTIDENTcontextn" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Alpha∈Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Sortir /inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontexto"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P=(Pin ∖ {Alpha})∪(Pout∪{Alpha})" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#Sortir \/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Sortir /inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTALLHYPcontexto"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(Pin ∖ {Alpha})∩(Pout∪{Alpha})=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poSequent#Sortir \/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcontexto" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Pout'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pin'" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcontexto" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#EVTIDENTcontexto" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Alpha∈Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/projet/Personnes.bpo|org.eventb.core.poFile#Personnes|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Pin⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Pout⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="P=Pin∪Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Pin∩Pout=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Alpha∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#6"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="Bravo∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#7"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="Alpha≠Bravo" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#8"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

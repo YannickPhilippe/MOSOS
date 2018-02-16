@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Pout ≔ P" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.comment="Ensemble des personnes extérieur autoriser à rentré" org.eventb.core.identifier="PAut"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Ensemble des personnes extérieur non autoriser à rentré" org.eventb.core.identifier="PNAut"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="PNAut ⊆ Pext "/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv2" org.eventb.core.predicate="PAut ⊆ Pext"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv3" org.eventb.core.predicate="Pext = PAut ∪ PNAut"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv4" org.eventb.core.predicate="PAut ∩ PNAut = ∅"/>
+<org.eventb.core.seesContext name="0" org.eventb.core.target="contexte"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="Pext ⊆ P "/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="Pext"/>
+<org.eventb.core.refinesMachine name="3" org.eventb.core.target="catégorie"/>
+</org.eventb.core.machineFile>

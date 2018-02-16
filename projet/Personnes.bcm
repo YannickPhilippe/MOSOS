@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/projet/contexte.bcc" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.seesContext#-"/>
+<org.eventb.core.scInternalContext name="contexte">
+<org.eventb.core.scCarrierSet name="P" org.eventb.core.source="/projet/contexte.buc|org.eventb.core.contextFile#contexte|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="contextf" org.eventb.core.label="inv1" org.eventb.core.predicate="Pin⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contextg" org.eventb.core.label="inv2" org.eventb.core.predicate="Pout⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#0" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contexth" org.eventb.core.label="inv3" org.eventb.core.predicate="P=Pin∪Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contexti" org.eventb.core.label="inv4" org.eventb.core.predicate="Pin∩Pout=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contextj" org.eventb.core.label="inv5" org.eventb.core.predicate="Alpha∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#6" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contextk" org.eventb.core.label="inv6" org.eventb.core.predicate="Bravo∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#7" org.eventb.core.theorem="false"/>
+<org.eventb.core.scInvariant name="contextl" org.eventb.core.label="inv7" org.eventb.core.predicate="Alpha≠Bravo" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#8" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="Alpha" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.variable#3" org.eventb.core.type="P"/>
+<org.eventb.core.scVariable name="Bravo" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.variable#4" org.eventb.core.type="P"/>
+<org.eventb.core.scVariable name="Pin" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.variable#(" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scVariable name="Pout" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.variable#)" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scEvent name="contextm" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="Pout ≔ P" org.eventb.core.label="act1" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#'"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="Pin ≔ ∅ ⦂ ℙ(P)" org.eventb.core.label="act2" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#("/>
+<org.eventb.core.scAction name=")" org.eventb.core.assignment="Alpha :∈ P" org.eventb.core.label="act3" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#)"/>
+<org.eventb.core.scAction name="*" org.eventb.core.assignment="Bravo :∈ P" org.eventb.core.label="act4" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5|org.eventb.core.action#*"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="contextn" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Rentrer" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Alpha∈Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9|org.eventb.core.guard#'" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="Pout ≔ Pout ∖ {Alpha}" org.eventb.core.label="act1" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9|org.eventb.core.action#("/>
+<org.eventb.core.scAction name=")" org.eventb.core.assignment="Pin ≔ Pin∪{Alpha}" org.eventb.core.label="act2" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#9|org.eventb.core.action#)"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="contexto" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Sortir " org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Alpha∈Pout" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:|org.eventb.core.guard#'" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="Pout ≔ Pout∪{Alpha}" org.eventb.core.label="act1" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:|org.eventb.core.action#("/>
+<org.eventb.core.scAction name=")" org.eventb.core.assignment="Pin ≔ Pin ∖ {Alpha}" org.eventb.core.label="act2" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#:|org.eventb.core.action#)"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act3/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act4/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Rentrer/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Rentrer/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Sortir /inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="10" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Sortir /inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="10" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Personnes"/>
+<org.eventb.core.seesContext name="-" org.eventb.core.target="contexte"/>
+<org.eventb.core.variable name="(" org.eventb.core.comment="Ensemble des personnes dans le GLORIA" org.eventb.core.identifier="Pin"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Ensemble des personnes à l'extérieur du gloria" org.eventb.core.identifier="Pout"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="Alpha"/>
+<org.eventb.core.variable name="4" org.eventb.core.identifier="Bravo"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="Pout ≔ P" org.eventb.core.comment="tout le monde est dehors" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="Pin ≔ ∅" org.eventb.core.comment="personne n'est dans le labo" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Alpha :∈ P" org.eventb.core.comment=" on ajoute Alpha dans la simulation" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Bravo :∈ P" org.eventb.core.comment=" on ajoute Bravo dans la simulation" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="Alpha :∈ Pext" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Bravo :∈ Plab" org.eventb.core.label="act6"/>
+<org.eventb.core.refinesEvent name="internal3" org.eventb.core.target="INITIALISATION"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="6" org.eventb.core.comment="personne extérieur" org.eventb.core.identifier="Pext"/>
+<org.eventb.core.variable name="7" org.eventb.core.comment="personne du labo" org.eventb.core.identifier="Plab"/>
+<org.eventb.core.invariant name="8" org.eventb.core.comment=" les personne peuvent étre exterieur au gloria" org.eventb.core.label="inv1" org.eventb.core.predicate="Pext ⊆ P"/>
+<org.eventb.core.invariant name="9" org.eventb.core.comment="les personnes peuvent étre interne au gloria" org.eventb.core.label="inv2" org.eventb.core.predicate="Plab ⊆ P"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv3" org.eventb.core.predicate="P = Pext ∪ Plab"/>
+<org.eventb.core.invariant name=";" org.eventb.core.comment=" une personne ne peut pas étre dans les deux a la fois" org.eventb.core.label="inv4" org.eventb.core.predicate="Pext ∩ Plab = ∅"/>
+</org.eventb.core.machineFile>

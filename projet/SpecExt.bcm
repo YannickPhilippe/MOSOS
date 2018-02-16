@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/projet/contexte.bcc" org.eventb.core.source="/projet/SpecExt.bum|org.eventb.core.machineFile#SpecExt|org.eventb.core.seesContext#0"/>
+<org.eventb.core.scInternalContext name="contexte">
+<org.eventb.core.scCarrierSet name="P" org.eventb.core.source="/projet/contexte.buc|org.eventb.core.contextFile#contexte|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="contextf" org.eventb.core.label="inv5" org.eventb.core.predicate="Pext⊆P" org.eventb.core.source="/projet/SpecExt.bum|org.eventb.core.machineFile#SpecExt|org.eventb.core.invariant#1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="Pext" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/projet/SpecExt.bum|org.eventb.core.machineFile#SpecExt|org.eventb.core.variable#2" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scEvent name="contextg" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/projet/SpecExt.bum|org.eventb.core.machineFile#SpecExt|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="Pext :∣ ⊤" org.eventb.core.label="GEN" org.eventb.core.source="/projet/SpecExt.bum|org.eventb.core.machineFile#SpecExt|org.eventb.core.event#'"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>
