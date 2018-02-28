@@ -17,8 +17,9 @@
 </org.eventb.core.scInternalContext>
 <org.eventb.core.scInternalContext name="Secu">
 <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Gloria/Personne.bcc|org.eventb.core.scContextFile#Personne" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.extendsContext#_SClAwAtcEeiwZL2kbEDizw"/>
-<org.eventb.core.scAxiom name="Personnf" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas,{N},{S},{M})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="Personnf" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas,{N},{S},{M},{JNO})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
 <org.eventb.core.scCarrierSet name="Cas" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.carrierSet#_SClAwQtcEeiwZL2kbEDizw" org.eventb.core.type="ℙ(Cas)"/>
+<org.eventb.core.scConstant name="JNO" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SCln0AtcEeiwZL2kbEDizy" org.eventb.core.type="Cas"/>
 <org.eventb.core.scConstant name="M" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SCln0AtcEeiwZL2kbEDizx" org.eventb.core.type="Cas"/>
 <org.eventb.core.scConstant name="N" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SClAwgtcEeiwZL2kbEDizw" org.eventb.core.type="Cas"/>
 <org.eventb.core.scConstant name="S" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SClAwwtcEeiwZL2kbEDizw" org.eventb.core.type="Cas"/>

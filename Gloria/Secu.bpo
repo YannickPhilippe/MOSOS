@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
 <org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Hot" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
@@ -13,11 +13,12 @@
 <org.eventb.core.poPredicate name="aCarti" org.eventb.core.predicate="aCarte⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6QtVEeiwZL2kbEDizw"/>
 <org.eventb.core.poPredicate name="aCartj" org.eventb.core.predicate="Pext⊆aCarte" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6gtVEeiwZL2kbEDizw"/>
 <org.eventb.core.poIdentifier name="Cas" org.eventb.core.type="ℙ(Cas)"/>
+<org.eventb.core.poIdentifier name="JNO" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="M" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="N" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="S" org.eventb.core.type="Cas"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Secu.bpo|org.eventb.core.poFile#Secu|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Cas,{N},{S},{M})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Secu.bpo|org.eventb.core.poFile#Secu|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Cas,{N},{S},{M},{JNO})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

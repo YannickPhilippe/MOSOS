@@ -4,6 +4,7 @@
 <org.eventb.core.carrierSet name="_SClAwQtcEeiwZL2kbEDizw" org.eventb.core.identifier="Cas"/>
 <org.eventb.core.constant name="_SClAwgtcEeiwZL2kbEDizw" org.eventb.core.comment="Normal" org.eventb.core.identifier="N"/>
 <org.eventb.core.constant name="_SClAwwtcEeiwZL2kbEDizw" org.eventb.core.comment="sécurité du gloria urgence" org.eventb.core.identifier="S"/>
-<org.eventb.core.axiom name="_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas, {N}, {S}, {M})"/>
+<org.eventb.core.axiom name="_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas, {N}, {S}, {M}, {JNO})"/>
 <org.eventb.core.constant name="_SCln0AtcEeiwZL2kbEDizx" org.eventb.core.comment="Maintenance" org.eventb.core.identifier="M"/>
+<org.eventb.core.constant name="_SCln0AtcEeiwZL2kbEDizy" org.eventb.core.comment="jour NonOuvrée" org.eventb.core.identifier="JNO"/>
 </org.eventb.core.contextFile>
