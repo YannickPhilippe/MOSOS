@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Gloria/Secu.bcc|org.eventb.core.scContextFile#Secu" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scInternalContext name="Personne">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(P,Pext,Plab)" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5gtVEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="Hot⊆Plab" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5wtVEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="aCode⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6AtVEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="aCarte⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6QtVEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="Pext⊆aCarte" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6gtVEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="Hot" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.constant#_YnaD4wtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scCarrierSet name="P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.carrierSet#_YnaD4AtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scConstant name="Pext" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.constant#_YnaD4QtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scConstant name="Plab" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.constant#_YnaD4gtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scConstant name="aCarte" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.constant#_YnaD5AtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.scConstant name="aCode" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.constant#_YnaD5QtVEeiwZL2kbEDizw" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInternalContext name="Secu">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Gloria/Personne.bcc|org.eventb.core.scContextFile#Personne" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.extendsContext#_SClAwAtcEeiwZL2kbEDizw"/>
+<org.eventb.core.scAxiom name="Personnf" org.eventb.core.label="axm0" org.eventb.core.predicate="partition(Cas,{N},{S},{M})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="Cas" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.carrierSet#_SClAwQtcEeiwZL2kbEDizw" org.eventb.core.type="ℙ(Cas)"/>
+<org.eventb.core.scConstant name="M" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SCln0AtcEeiwZL2kbEDizx" org.eventb.core.type="Cas"/>
+<org.eventb.core.scConstant name="N" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SClAwgtcEeiwZL2kbEDizw" org.eventb.core.type="Cas"/>
+<org.eventb.core.scConstant name="S" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.constant#_SClAwwtcEeiwZL2kbEDizw" org.eventb.core.type="Cas"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scAxiom name="Personnf" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(H,{NoOne},{Permanent},{All})" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="All" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.constant#+" org.eventb.core.type="H"/>
+<org.eventb.core.scCarrierSet name="H" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(H)"/>
+<org.eventb.core.scConstant name="NoOne" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.constant#)" org.eventb.core.type="H"/>
+<org.eventb.core.scConstant name="Permanent" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.constant#*" org.eventb.core.type="H"/>
+</org.eventb.core.scContextFile>

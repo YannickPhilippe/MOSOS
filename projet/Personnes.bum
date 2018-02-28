@@ -7,13 +7,16 @@
 <org.eventb.core.invariant name="0" org.eventb.core.label="inv2" org.eventb.core.predicate="Pout ⊆ P"/>
 <org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="P = Pin ∪ Pout"/>
 <org.eventb.core.invariant name="2" org.eventb.core.label="inv4" org.eventb.core.predicate="Pin ∩ Pout = ∅"/>
-<org.eventb.core.variable name="3" org.eventb.core.identifier="Alpha"/>
-<org.eventb.core.variable name="4" org.eventb.core.identifier="Bravo"/>
+<org.eventb.core.variable name="3" org.eventb.core.comment="personne A" org.eventb.core.identifier="Alpha"/>
+<org.eventb.core.variable name="4" org.eventb.core.comment="Personne B" org.eventb.core.identifier="Bravo"/>
 <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="Pout ≔ P" org.eventb.core.comment="tout le monde est dehors" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="(" org.eventb.core.assignment="Pin ≔ ∅" org.eventb.core.comment="personne n'est dans le labo" org.eventb.core.label="act2"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="Alpha :∈ P" org.eventb.core.comment=" on ajoute Alpha dans la simulation" org.eventb.core.label="act3"/>
 <org.eventb.core.action name="*" org.eventb.core.assignment="Bravo :∈ P" org.eventb.core.comment=" on ajoute Bravo dans la simulation" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="PExt ≔ P" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="PLab ≔ ∅" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="Alpha :∈ PExt" org.eventb.core.label="act7"/>
 </org.eventb.core.event>
 <org.eventb.core.invariant name="6" org.eventb.core.label="inv5" org.eventb.core.predicate="Alpha ∈ P"/>
 <org.eventb.core.invariant name="7" org.eventb.core.label="inv6" org.eventb.core.predicate="Bravo ∈ P"/>
@@ -28,4 +31,10 @@
 <org.eventb.core.action name="(" org.eventb.core.assignment="Pout ≔ Pout ∪{Alpha}" org.eventb.core.label="act1"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="Pin ≔ Pin  ∖{Alpha}" org.eventb.core.label="act2"/>
 </org.eventb.core.event>
+<org.eventb.core.variable name=";" org.eventb.core.comment="persone Exterieur au labo" org.eventb.core.identifier="PExt"/>
+<org.eventb.core.variable name="=" org.eventb.core.comment="Personne travaillant au Gloria" org.eventb.core.identifier="PLab"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv8" org.eventb.core.predicate="PExt ⊆ P"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv9" org.eventb.core.predicate="PLab ⊆ P"/>
+<org.eventb.core.invariant name="@" org.eventb.core.label="inv10" org.eventb.core.predicate="P = PExt ∪ PLab"/>
+<org.eventb.core.invariant name="A" org.eventb.core.label="inv11" org.eventb.core.predicate="PExt ∩ PLab = ∅"/>
 </org.eventb.core.machineFile>

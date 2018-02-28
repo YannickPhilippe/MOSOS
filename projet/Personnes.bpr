@@ -47,8 +47,30 @@
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/inv8/INV"/>
 <org.eventb.core.prProof name="INITIALISATION/inv9/INV"/>
-<org.eventb.core.prProof name="INITIALISATION/inv10/INV"/>
-<org.eventb.core.prProof name="INITIALISATION/inv11/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="P">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="P=P∪(∅ ⦂ ℙ(P))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="P">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="P∩(∅ ⦂ ℙ(P))=(∅ ⦂ ℙ(P))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/inv12/INV"/>
 <org.eventb.core.prProof name="INITIALISATION/act3/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="P">
 <org.eventb.core.lang name="L"/>
@@ -107,6 +129,8 @@
 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -123,6 +147,12 @@
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Pin⊆P"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="PExt⊆P">
+<org.eventb.core.prIdent name="PExt" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="PLab⊆P">
+<org.eventb.core.prIdent name="PLab" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Alpha∈P"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Alpha=Bravo">
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
@@ -142,6 +172,8 @@
 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -157,6 +189,12 @@
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Pin⊆P"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="PExt⊆P">
+<org.eventb.core.prIdent name="PExt" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="PLab⊆P">
+<org.eventb.core.prIdent name="PLab" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Alpha∈P"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="(Pin∪{Alpha})∩Pout⊆{Alpha}"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(Pin∪{Alpha})∩(Pout ∖ {Alpha})=(∅ ⦂ ℙ(P))"/>
@@ -177,6 +215,8 @@
 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -192,6 +232,12 @@
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Pin⊆P"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="PExt⊆P">
+<org.eventb.core.prIdent name="PExt" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="PLab⊆P">
+<org.eventb.core.prIdent name="PLab" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Alpha∈P"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Alpha=Bravo">
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
@@ -212,6 +258,8 @@
 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -228,7 +276,13 @@
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Pin⊆P"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="PExt⊆P">
+<org.eventb.core.prIdent name="PExt" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Pin∩(Pout∪{Alpha})⊆{Alpha}"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="PLab⊆P">
+<org.eventb.core.prIdent name="PLab" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Alpha∈P"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Alpha=Bravo">
 <org.eventb.core.prIdent name="Bravo" org.eventb.core.type="P"/>

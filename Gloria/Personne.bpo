@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Hot" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Plab" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="aCarte" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="aCode" org.eventb.core.type="ℙ(P)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Personne.bpo|org.eventb.core.poFile#Personne|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(P,Pext,Plab)" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5gtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Hot⊆Plab" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5wtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="aCode⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6AtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="aCarte⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6QtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Pext⊆aCarte" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6gtVEeiwZL2kbEDizw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

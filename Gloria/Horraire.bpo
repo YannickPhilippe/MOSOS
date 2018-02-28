@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Hot" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Plab" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="aCarte" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="aCode" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poPredicate name="aCartf" org.eventb.core.predicate="partition(P,Pext,Plab)" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5gtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="aCartg" org.eventb.core.predicate="Hot⊆Plab" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD5wtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="aCarth" org.eventb.core.predicate="aCode⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6AtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="aCarti" org.eventb.core.predicate="aCarte⊆P" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6QtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poPredicate name="aCartj" org.eventb.core.predicate="Pext⊆aCarte" org.eventb.core.source="/Gloria/Personne.buc|org.eventb.core.contextFile#Personne|org.eventb.core.axiom#_YnaD6gtVEeiwZL2kbEDizw"/>
+<org.eventb.core.poIdentifier name="Cas" org.eventb.core.type="ℙ(Cas)"/>
+<org.eventb.core.poIdentifier name="M" org.eventb.core.type="Cas"/>
+<org.eventb.core.poIdentifier name="N" org.eventb.core.type="Cas"/>
+<org.eventb.core.poIdentifier name="S" org.eventb.core.type="Cas"/>
+<org.eventb.core.poPredicate name="aCartk" org.eventb.core.predicate="partition(Cas,{N},{S},{M})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw"/>
+<org.eventb.core.poIdentifier name="H" org.eventb.core.type="ℙ(H)"/>
+<org.eventb.core.poIdentifier name="All" org.eventb.core.type="H"/>
+<org.eventb.core.poIdentifier name="NoOne" org.eventb.core.type="H"/>
+<org.eventb.core.poIdentifier name="Permanent" org.eventb.core.type="H"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Horraire.bpo|org.eventb.core.poFile#Horraire|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(H,{NoOne},{Permanent},{All})" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

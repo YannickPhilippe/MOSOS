@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="32">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poFile org.eventb.core.poStamp="17">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
 <org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Hot" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
@@ -17,104 +17,103 @@
 <org.eventb.core.poIdentifier name="N" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="S" org.eventb.core.type="Cas"/>
 <org.eventb.core.poPredicate name="aCartk" org.eventb.core.predicate="partition(Cas,{N},{S},{M})" org.eventb.core.source="/Gloria/Secu.buc|org.eventb.core.contextFile#Secu|org.eventb.core.axiom#_SCln0AtcEeiwZL2kbEDizw"/>
+<org.eventb.core.poIdentifier name="H" org.eventb.core.type="ℙ(H)"/>
+<org.eventb.core.poIdentifier name="All" org.eventb.core.type="H"/>
+<org.eventb.core.poIdentifier name="NoOne" org.eventb.core.type="H"/>
+<org.eventb.core.poIdentifier name="Permanent" org.eventb.core.type="H"/>
+<org.eventb.core.poPredicate name="Permanenu" org.eventb.core.predicate="partition(H,{NoOne},{Permanent},{All})" org.eventb.core.source="/Gloria/Horraire.buc|org.eventb.core.contextFile#Horraire|org.eventb.core.axiom#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="CasActuel" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="PIn" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="POut" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PersonneA" org.eventb.core.type="P"/>
 <org.eventb.core.poIdentifier name="PersonneB" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="Time" org.eventb.core.type="H"/>
 <org.eventb.core.poPredicate name="PersonneC" org.eventb.core.predicate="PIn⊆P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#-"/>
 <org.eventb.core.poPredicate name="PersonneD" org.eventb.core.predicate="POut⊆P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#."/>
 <org.eventb.core.poPredicate name="PersonneE" org.eventb.core.predicate="PIn∩POut=(∅ ⦂ ℙ(P))" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/"/>
 <org.eventb.core.poPredicate name="PersonneF" org.eventb.core.predicate="PersonneA∈P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#0"/>
 <org.eventb.core.poPredicate name="PersonneG" org.eventb.core.predicate="PersonneB∈P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#1"/>
+<org.eventb.core.poPredicate name="PersonneH" org.eventb.core.predicate="CasActuel∈Cas" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#_aCDYwAtcEeiwZL2kbEDiz}"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="32">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPPersonneC">
-<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="PersonneA'∈P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#)"/>
-<org.eventb.core.poPredicate name="(" org.eventb.core.predicate="PersonneB'∈P" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSequent name="INITIALISATION/act6/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTALLHYPPersonneC">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="CasActuel'∈Cas" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.poPredicate name="(" org.eventb.core.predicate="PersonneA'∈P" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#("/>
+<org.eventb.core.poPredicate name=")" org.eventb.core.predicate="PersonneB'∈P" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cas≠(∅ ⦂ ℙ(Cas))" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#'"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#'"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPPersonneC"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="H≠(∅ ⦂ ℙ(H))" org.eventb.core.source="/Gloria/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.event#'|org.eventb.core.action#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Gloria/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.event#'|org.eventb.core.action#,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTALLHYPPersonneC"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneC" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneC" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="PersonneB'" org.eventb.core.type="P"/>
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="H"/>
 <org.eventb.core.poIdentifier name="CasActuel'" org.eventb.core.type="Cas"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PersonneA'" org.eventb.core.type="P"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneC" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneC" org.eventb.core.poStamp="32"/>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneD" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneC" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneC" org.eventb.core.poStamp="15"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneD" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneD" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneD" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneD" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneD" org.eventb.core.poStamp="16">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈POut" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#2|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneB∈PIn" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#2|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Hot∩PIn≠(∅ ⦂ ℙ(P))" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="CasActuel=N" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDiz~|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Time=All" org.eventb.core.source="/Gloria/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.event#0|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneE" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneE" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneE" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneE" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneE" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneE" org.eventb.core.poStamp="17">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈POut" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#3|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneA∈aCarte" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#3|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CasActuel=N" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{'|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Time=Permanent∨Time=All" org.eventb.core.source="/Gloria/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.event#1|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneF" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneF" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneF" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneF" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneF" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneF" org.eventb.core.poStamp="15">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈PIn" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Hot∩PIn≠(∅ ⦂ ℙ(P))" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CasActuel∈Cas" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{(|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneG" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneG" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneG" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneG" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneG" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneG" org.eventb.core.poStamp="15">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈PIn" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PersonneA∈aCarte" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CasActuel∈Cas" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{)|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneH" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneH" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneH" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneH" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneH" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneH" org.eventb.core.poStamp="15">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈PIn" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#6|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Hot∩PIn=(∅ ⦂ ℙ(P))" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#6|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PersonneA∈aCode" org.eventb.core.source="/Gloria/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#6|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="CasActuel=N" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{*|org.eventb.core.guard#'"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="Situation6/PIn/EQL" org.eventb.core.accurate="true" org.eventb.core.poDesc="Equality of common variables" org.eventb.core.poStamp="32">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPPersonneI"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="PIn ∖ {PersonneA}=PIn" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+|org.eventb.core.action#)"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#Situation6\/PIn\/EQL|org.eventb.core.poPredicateSet#SEQHYP"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="Situation6/POut/EQL" org.eventb.core.accurate="true" org.eventb.core.poDesc="Equality of common variables" org.eventb.core.poStamp="32">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPPersonneI"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="POut∪{PersonneA}=POut" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+|org.eventb.core.action#*"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#Situation6\/POut\/EQL|org.eventb.core.poPredicateSet#SEQHYP"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTPersonneI" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTIDENTPersonneI" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
 <org.eventb.core.poIdentifier name="POut'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="PIn'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneI" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTPersonneI" org.eventb.core.poStamp="32">
+<org.eventb.core.poPredicateSet name="EVTALLHYPPersonneI" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#EVTIDENTPersonneI" org.eventb.core.poStamp="15">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PersonneA∈PIn" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="CasActuel=S" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#_aCDYwAtcEeiwZL2kbEDi{+|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="32">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="CasActuel∈Cas" org.eventb.core.source="/Gloria/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#_aCDYwAtcEeiwZL2kbEDiz}"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Gloria/Machine2.bpo|org.eventb.core.poFile#Machine2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Time∈H" org.eventb.core.source="/Gloria/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.invariant#7"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

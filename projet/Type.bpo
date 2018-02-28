@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poFile org.eventb.core.poStamp="7">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="P" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="7">
 <org.eventb.core.poIdentifier name="Alpha" org.eventb.core.type="P"/>
 <org.eventb.core.poIdentifier name="Bravo" org.eventb.core.type="P"/>
+<org.eventb.core.poIdentifier name="PExt" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="PLab" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pext" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pin" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Plab" org.eventb.core.type="ℙ(P)"/>
@@ -17,9 +19,13 @@
 <org.eventb.core.poPredicate name="Bravt" org.eventb.core.predicate="Alpha∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#6"/>
 <org.eventb.core.poPredicate name="Bravu" org.eventb.core.predicate="Bravo∈P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#7"/>
 <org.eventb.core.poPredicate name="Bravv" org.eventb.core.predicate="Alpha≠Bravo" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="Bravw" org.eventb.core.predicate="PExt⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poPredicate name="Bravx" org.eventb.core.predicate="PLab⊆P" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#?"/>
+<org.eventb.core.poPredicate name="Bravy" org.eventb.core.predicate="P=PExt∪PLab" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#@"/>
+<org.eventb.core.poPredicate name="Bravz" org.eventb.core.predicate="PExt∩PLab=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.invariant#A"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTALLHYPcontextq"/>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTALLHYPcontextu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="P=Pext'∪Plab'" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.invariant#:"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.event#5"/>
@@ -27,8 +33,8 @@
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTALLHYPcontextq"/>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTALLHYPcontextu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Pext'∩Plab'=(∅ ⦂ ℙ(P))" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.invariant#;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/projet/Personnes.bum|org.eventb.core.machineFile#Personnes|org.eventb.core.event#5"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.event#5"/>
@@ -36,16 +42,18 @@
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTcontextq" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTIDENTcontextu" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PLab'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Plab'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Bravo'" org.eventb.core.type="P"/>
 <org.eventb.core.poIdentifier name="Alpha'" org.eventb.core.type="P"/>
 <org.eventb.core.poIdentifier name="Pext'" org.eventb.core.type="ℙ(P)"/>
+<org.eventb.core.poIdentifier name="PExt'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pout'" org.eventb.core.type="ℙ(P)"/>
 <org.eventb.core.poIdentifier name="Pin'" org.eventb.core.type="ℙ(P)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPcontextq" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTIDENTcontextq" org.eventb.core.poStamp="0"/>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="EVTALLHYPcontextu" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#EVTIDENTcontextu" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/projet/Type.bpo|org.eventb.core.poFile#Type|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="7">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Pext⊆P" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.invariant#8"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Plab⊆P" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.invariant#9"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="P=Pext∪Plab" org.eventb.core.source="/projet/Type.bum|org.eventb.core.machineFile#Type|org.eventb.core.invariant#:"/>
