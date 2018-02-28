@@ -23,21 +23,21 @@
 <org.eventb.core.guard name="'" org.eventb.core.label="grd4" org.eventb.core.predicate="CasActuel = N"/>
 <org.eventb.core.refinesEvent name="(" org.eventb.core.target="Situation2"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation3">
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{(" org.eventb.core.comment="Cas visiteur avec présence hotesse sortant " org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation3">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Situation3"/>
 <org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="CasActuel ∈ Cas"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{)" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation4">
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{)" org.eventb.core.comment="Cas employé disposant d'une carte sortant " org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation4">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Situation4"/>
 <org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="CasActuel ∈ Cas"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation5">
+<org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{*" org.eventb.core.comment="Cas personne disposant d'un code et hotesses absentes sortant" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Situation5">
 <org.eventb.core.guard name="'" org.eventb.core.label="grd4" org.eventb.core.predicate="CasActuel = N"/>
 <org.eventb.core.refinesEvent name="(" org.eventb.core.target="Situation5"/>
 </org.eventb.core.event>
 <org.eventb.core.event name="_aCDYwAtcEeiwZL2kbEDi{+" org.eventb.core.comment="Cas d'urgence, une personne présente dans le Gloria peut sortir" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Situation6">
 <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PersonneA ∈ PIn"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="CasActuel = S"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="si en sécurité on fais sortir sinon si on est en jour non ouvrée tous le monde dehors" org.eventb.core.label="grd2" org.eventb.core.predicate="CasActuel = S ∨ CasActuel = JNO "/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="PIn ≔ PIn ∖ {PersonneA}" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="*" org.eventb.core.assignment="POut ≔ POut ∪ {PersonneA}" org.eventb.core.label="act2"/>
 </org.eventb.core.event>

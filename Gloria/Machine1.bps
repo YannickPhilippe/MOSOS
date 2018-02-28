@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
 <org.eventb.core.psStatus name="INITIALISATION/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="Situation6/PIn/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="Situation6/POut/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Situation6/PIn/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="34" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Situation6/POut/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="34" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
